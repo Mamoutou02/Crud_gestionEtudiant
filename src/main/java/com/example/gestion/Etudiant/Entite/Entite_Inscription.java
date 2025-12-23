@@ -18,10 +18,18 @@ public class Entite_Inscription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     @Enumerated(EnumType.STRING)
     private AnneeAcademique anneeAcademique;
+
     @Enumerated(EnumType.STRING)
     private Periode periode;
+
     @ManyToOne
+    @JoinColumn(name = "etudiant_id", nullable = false)
     private Entite_Etudiant etudiant;
+
+    @ManyToOne
+    @JoinColumn(name = "filiere_id", nullable = false)
+    private Entite_Filiere filiere;
 }

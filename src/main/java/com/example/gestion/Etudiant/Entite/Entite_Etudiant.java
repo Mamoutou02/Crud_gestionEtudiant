@@ -12,7 +12,8 @@ import java.util.List;
 
 @Entity
 @Table(name ="Etudiant")
-@Getter @Setter
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Entite_Etudiant {
@@ -22,9 +23,9 @@ public class Entite_Etudiant {
     private String nom;
     private String prenom;
     private String mail;
+
     @Enumerated(EnumType.STRING)
     private NiveauEtude niveauEtude;
-
 
     @OneToMany(mappedBy = "etudiant", cascade = CascadeType.ALL)
     private List<Entite_Inscription> inscriptions;

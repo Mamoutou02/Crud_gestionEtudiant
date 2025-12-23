@@ -1,11 +1,11 @@
 package com.example.gestion.Etudiant.Enumeration;
 
 public enum AnneeAcademique {
-    _2020_2021,
-    _2021_2022,
-    _2022_2023,
-    _2023_2024,
-    _2024_2025,
-    _2025_2026
+    ANNEE_2020_2021,
+    ANNEE_2021_2022,
+    ANNEE_2022_2023,
+    ANNEE_2023_2024,
+    ANNEE_2024_2025,
+    ANNEE_2025_2026
 
 }
